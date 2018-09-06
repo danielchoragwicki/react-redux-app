@@ -24,6 +24,6 @@ class TodoFrom extends Component {
 }
 
 export default connect(
-  state => ({currentTodo: state.currentTodo}),
+  state => ({currentTodo: state.todo.currentTodo}),
   {updateCurrent, saveTodo}
 )(TodoFrom)
